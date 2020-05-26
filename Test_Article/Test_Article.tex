@@ -1,0 +1,82 @@
+% This document is a test example of an article document in LaTeX. 
+
+% The class determine the type of document and any other aspects of it
+
+\documentclass[12pt, letterpaper, twoside]{article}
+
+% This package encodes the document
+
+\usepackage[utf8]{inputenc}
+
+% These allow images to be embedded
+
+\usepackage{graphicx}
+\graphicspath{ {../Images/} }
+
+% This package gives access to more complex math expressions
+
+\usepackage{amsmath}
+
+% This package puts a full newline between each paragraph
+
+\usepackage{parskip}
+\setlength{\parindent}{15pt}
+
+% This establishes the header
+
+\title{First document!}
+\author{Vyoma Jani \thanks{Helped by that PDF that I Googled}}
+% \date{December 25, 2019}
+
+% This is where the body of the document starts
+
+\begin{document}
+
+\maketitle
+
+% This creates an abstract for the document
+
+\begin{abstract}
+This is the abstract, which goes at the top of the document. It introduces the subject, which, in this case, is testing out example tags in \LaTeX{}.
+\end{abstract}
+
+First \LaTeX{} document!
+
+So far, this example has used classes, packages, titles, authors, and dates! We have learned how to \textbf{bold}, \textit{italicize}, and \underline{underline}. We can \emph{emphasize} certain things, \textit{or we can even \emph{not emphasize} other things}.
+
+We have also learned how to add images:
+
+\begin{figure}[h]
+	\centering\includegraphics[width=0.25\textwidth]{Sun}
+	\caption{The sun}
+	\label{fig:mesh1}
+\end{figure}
+
+Now, if we want to reference Figure \ref{fig:mesh1}, we just use a command!
+
+We also learned about lists!
+
+\begin{itemize}
+	\item This is an unordered list
+	\item It has bullets
+\end{itemize}
+
+\begin{enumerate}
+	\item This is an ordered list
+	\item It is numbered
+\end{enumerate}
+
+And we learned how to add math expressions to the text. 
+
+To write a subscript, use an underline, like in $a_b$. For a superscript, use the exponent symbol, like in $a^b$. 
+
+We can put expressions inline using three different delimiters: \(E=mc^2\), $\int_0^1 \frac{x}{2} dx$, or \begin{math} \omega \end{math}. 
+
+We can also put expressions in display mode using the delimiters: \[ \sin(\delta) \] or \begin{equation}
+\Omega\end{equation} which adds a number since it's an equation, or \begin{displaymath}
+\cos(\Delta)\end{displaymath}
+There is also $$\log(x)$$ but this is not recommended. 
+
+It's interesting \dots you can do so much with \LaTeX{}!
+
+\end{document}
