@@ -1,0 +1,128 @@
+% This document is a test example of a report document in LaTeX. 
+
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+
+\title{Report}
+\author{Vyoma Jani \thanks{Helped by that website I Googled}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\part{The First Part}
+
+\chapter{The First Chapter}
+
+\section{Introduction}
+
+This is the first section. Pretty cool huh? The section will continue until you specify the next section or chapter, and then it'll start the new section or chapter.
+
+\section{Second Section}
+
+Sections can even have their own subsections! 
+
+\subsection{First Subsection}
+
+This here is a subsection of the section, in case you need to break it up even more. 
+
+You can break it up \textit{even more} with subsubsections!
+
+\subsubsection{First Subsubsection}
+
+Now this is getting ridiculous. I guess we can just roll with it.
+
+Now we will add some tables!
+
+Here is a basic table, with no borders whatsoever. 
+
+\begin{center}
+
+\begin{tabular}{c rl}
+
+cell1 & cell2 & cell3 \\
+cell4 & cell5 & cell6 \\
+cell7 & cell8 & cell9
+
+\end{tabular}
+
+\end{center}
+
+What if we wanted vertical borders?
+
+\begin{center}
+
+\begin{tabular}{ |c|||r l| }
+
+cell1 & cell2 & cell3 \\
+cell4 & cell5 & cell6 \\
+cell7 & cell8 & cell9
+
+\end{tabular}
+
+\end{center}
+
+The above example has a few vertical borders.
+
+What if we want horizontal borders?
+
+\begin{center}
+
+\begin{tabular}{c r l}
+
+cell1 & cell2isthis & cell3 \\
+\hline
+cell4 & cell5 & cell6isthis \\
+cell7isthis & cell8 & cell9 \\
+\hline
+\hline
+
+\end{tabular}
+
+\end{center}
+
+We can also add captions, labels, and references to the tables. 
+
+Table \ref{table:data} is an example of these referenced \LaTeX{} elements.
+ 
+\begin{table}[h!]
+
+\centering
+
+\begin{tabular}{||c c c c||} 
+
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ 2 & 7 & 78 & 5415 \\
+ 3 & 545 & 778 & 7507 \\
+ 4 & 545 & 18744 & 7560 \\
+ 5 & 88 & 788 & 6344 \\
+ \hline
+ 
+\end{tabular}
+
+\caption{Table to test captions and labels}
+
+\label{table:data}
+
+\end{table}
+
+
+\section*{Unnumbered Section}
+
+Not all sections need to be numbered! Or maybe you don't want any of the sections to be numbered!
+
+\paragraph{First Paragraph} 
+
+I guess if you do want to go smaller than a subsubsection, then you use paragraphs. 
+
+\subparagraph{First Subparagraph}
+
+And if a paragraph isn't enough, we break it up into subparagraphs.
+
+\end{document}
+
